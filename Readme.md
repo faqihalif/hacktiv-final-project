@@ -1,4 +1,4 @@
-# ASSIGNMENT 2
+# FINAL PROJECT
 
 ## Development Environtment
 
@@ -44,7 +44,7 @@ Install dependencies
 Go to the cmd/web directory
 
 ```bash
-  cd cmd/web/
+  cd cmd/grpc/
 ```
 
 Start the server
