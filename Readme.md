@@ -2,17 +2,13 @@
 
 ## Development Environtment
 
-- Go fiber
-- Postgresql
-- Go fiber session
+- Protobuf + GRPC
 
 ## Features
 
-- Sign Up
-- Send email activation link
-- Activate account
-- Sign In
-- Sign Out
+- Create Patient
+- Get List Patient
+- Filter Patient
 
 
 
@@ -21,7 +17,7 @@
 Clone the project
 
 ```bash
-  git clone https://h_patient
+  git clone https://github.com/faqihalif/hacktiv-final-project.git
 ```
 
 Migrate Database

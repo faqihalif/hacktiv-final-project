@@ -1,19 +1,13 @@
-create table verify_auths(
-    id serial,
-    auth_id int not null,
-    token text not null,
-    created_at timestamptz,
-    activated_at timestamptz,
-    expired_at timestamptz not null
-);
-create table auths(
-    id serial,
-    email text not null,
-    password text not null,
-    username text not null,
-    first_name text not null,
-    last_name text not null,
-    is_active boolean not null default false,
-    created_at timestamptz,
-    activated_at timestamptz
+create table patients(
+    patient_id character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    first_name character varying(100) COLLATE pg_catalog."default",
+    last_name character varying(100) COLLATE pg_catalog."default",
+    date_of_birth timestamp without time zone,
+    address text COLLATE pg_catalog."default",
+    email character varying(100) COLLATE pg_catalog."default",
+    phone_number character varying(50) COLLATE pg_catalog."default",
+    is_active boolean,
+    create_at timestamp without time zone,
+    user_create character varying(20) COLLATE pg_catalog."default",
+    CONSTRAINT patients_pkey PRIMARY KEY (patient_id)
 );
